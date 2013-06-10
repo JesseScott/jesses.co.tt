@@ -8,9 +8,9 @@ int index[] = new int[12];
 int iVar = 0;
 
 void setup() {
-  size(1200, 600, P2D);
-  // size(window.innerWidth, window.innerHeight);
-  // size($(window).width(),$(window).height());
+  //size(1200, 600, P2D);
+  //size(window.innerWidth, window.innerHeight, P2D);
+  size($(window).width(),$(window).height());
   
   background(255);
   fill(0);
