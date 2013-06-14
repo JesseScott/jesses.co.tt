@@ -8,16 +8,16 @@ int index[] = new int[12];
 int iVar = 0;
 
 void setup() {
-  //size(1200, 600, P2D);
+  size(1200, 600, P2D);
   //size(window.innerWidth, window.innerHeight, P2D);
-  size($(window).width(),$(window).height());
+  //size($(window).width(), $(window).height());
   
   background(255);
   fill(0);
   noStroke();
   smooth();
   
-  font = createFont("Arial", fontSize);
+  font = createFont("Helvetica", fontSize);
   textSize(fontSize);
   textFont(font);
   

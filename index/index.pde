@@ -17,7 +17,7 @@ void setup() {
   noStroke();
   smooth();
   
-  font = createFont("Arial", fontSize);
+  font = createFont("Helvetica", fontSize);
   textSize(fontSize);
   textFont(font);
   
