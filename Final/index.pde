@@ -9,15 +9,15 @@ int iVar = 0;
 
 void setup() {
   size(1200, 600, P2D);
-  // size(window.innerWidth, window.innerHeight);
-  // size($(window).width(),$(window).height());
+  //size(window.innerWidth, window.innerHeight, P2D);
+  //size($(window).width(), $(window).height());
   
   background(255);
   fill(0);
   noStroke();
   smooth();
   
-  font = createFont("Arial", fontSize);
+  font = createFont("Helvetica", fontSize);
   textSize(fontSize);
   textFont(font);
   
@@ -51,6 +51,10 @@ void draw() {
     text(name, 75, 0); 
  
 } //
+
+void mouseClicked() {
+  link("http://jesses.co.tt/menu.html"); 
+}
 
 
 
