@@ -52,6 +52,10 @@ void draw() {
  
 } //
 
+void mouseClicked() {
+  link("http://jesses.co.tt/menu.html"); 
+}
+
 
 
 
