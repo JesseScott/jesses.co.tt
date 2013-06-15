@@ -2,10 +2,8 @@
 
 PFont font;
 int fontSize = 48;
-char name[] = { 'j', 'e', 's', 's', 'e', 's', '.', 'c', 'o', '.', 't', 't' };
 string name = "jesses.co.tt";
 int index[] = new int[12];
-int iVar = 0;
 
 void setup() {
   size(1200, 600, P2D);
@@ -56,7 +54,9 @@ void mouseClicked() {
   link("http://jesses.co.tt/menu.html"); 
 }
 
-
+void keyPressed() {
+  save("image.png");
+}
 
 
 

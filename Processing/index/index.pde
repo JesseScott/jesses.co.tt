@@ -2,13 +2,11 @@
 
 PFont font;
 int fontSize = 48;
-char name[] = { 'j', 'e', 's', 's', 'e', 's', '.', 'c', 'o', '.', 't', 't' };
-string name = "jesses.co.tt";
+String name = "jesses.co.tt";
 int index[] = new int[12];
-int iVar = 0;
 
 void setup() {
-  size(1200, 600, P2D);
+  size(1200, 600, JAVA2D);
   //size(window.innerWidth, window.innerHeight, P2D);
   //size($(window).width(), $(window).height());
   
@@ -35,9 +33,9 @@ void draw() {
     for(int i = 0; i < 75; i++) {
       fontSize ++;
       
-      int r = abs(sin(i) * 25);
-      int g = abs(cos(i) * 5);
-      int b = abs(sin(i) * i);
+      int r = int(abs(sin(i) * 25));
+      int g = int(abs(cos(i) * 5));
+      int b = int(abs(sin(i) * i));
  
       fill(r, g, b + i, i);
       
@@ -56,7 +54,9 @@ void mouseClicked() {
   link("http://jesses.co.tt/menu.html"); 
 }
 
-
+void keyPressed() {
+  save("image.png");
+}
 
 
 
