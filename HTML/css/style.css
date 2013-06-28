@@ -27,6 +27,14 @@
 		color: #A8B1B8;
 	}
 	
+	H3 {
+		font: 20px helvetica, sans-serif; 
+		text-align:left;  
+		padding-left: 50px; 
+		padding-right: 25px; 
+		color: #A8B1B8;
+	}
+	
 	Menu {
 		font: 20px helvetica, sans-serif; 
 		text-align:left;  
@@ -43,6 +51,13 @@
 		color: #A8B1B8;
 	}
 	
+	Description {
+		font: 20px helvetica, sans-serif; 
+		text-align:left;  
+		padding-left: 50px; 
+		padding-right: 25px; 
+		color: #A8B1B8;
+	}
 	
 	body {
 		background-color: #ffffff;
