@@ -28,18 +28,34 @@
 	}
 	
 	H3 {
+		font: 90px helvetica, sans-serif; 
+		text-align:left;  
+		padding-left: 50px; 
+		padding-right: 50px; 
+		color: #A8B1B8;
+	}
+	
+	H4 {
 		font: 20px helvetica, sans-serif; 
 		text-align:left;  
 		padding-left: 50px; 
-		padding-right: 25px; 
 		color: #A8B1B8;
 	}
+	
 	
 	Menu {
 		font: 20px helvetica, sans-serif; 
 		text-align:left;  
 		padding-left: 50px; 
 		letter-spacing: 0px; 
+		color: #A8B1B8;
+	}
+	
+	CV {
+		font: 20px helvetica, sans-serif; 
+		text-align:left;  
+		padding-left: 50px; 
+		padding-right: 25px; 
 		color: #A8B1B8;
 	}
 	
@@ -62,6 +78,15 @@
 	body {
 		background-color: #ffffff;
 	}
+	
+	/* TABLE */
+	.tableStyle {
+		font: 20px helvetica, sans-serif; 
+		text-align:left;  
+		border-spacing: 50px;
+		color: #A8B1B8;
+	}
+	
 	
 	/* INDEX IMAGE */
 	img {
