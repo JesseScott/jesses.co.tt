@@ -16,6 +16,10 @@
 		<!-- STYLE -->
 		<link rel="stylesheet" href="../css/style.css">
 		
+		<!-- JQUERY -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		
 	</head>
 	
 	<!-- BODY -->
@@ -29,10 +33,22 @@
 			<a href="contact.html">contact</a>
 		</H1>
 		
-		<Menu>
-			<a href="../categories/all.html">ALL</a> | 
-			<a href="../categories/commercial.html">COMMERCIAL</a> |
-			<a href="../categories/conceptual.html">CONCEPTUAL</a> | 
+		<form id='group'>
+			<label><input type="radio" name="group1" class="all"/></label>
+			<label><input type="radio" name="group1" class="commercial"/></label> 
+			<label><input type="radio" name="group1" class="conceptual"/></label>
+		</form>
+		
+		<div class="categories">
+		  <div class="all">all</div>
+		  <div class="commercial">commercial</div>
+		  <div class="conceptual">conceptual</div>
+		</div>
+		
+		<Button>
+			<a href="#" onclick="showHideDiv('all')">ALL | </a>
+			<a href="#" onclick="showHideDiv('commercial')">COMMERCIAL</a>
+			<a href="#" onclick="showHideDiv('conceptual')">CONCEPTUAL | </a>
 			<a href="../categories/curation.html">CURATION</a> | 
 			<a href="../categories/grl.html">GRL</a> | 
 			<a href="../categories/memelab.html">MEMELAB</a> |
@@ -40,90 +56,58 @@
 			<a href="../categories/software.html">SOFTWARE</a> | 
 			<a href="../categories/teaching.html">TEACHING</a> | 
 			<a href="../categories/writing.html">WRITING</a>
-		</Menu>
+		</Button>
 	
-		<TABLE border=0 >
-
-			<tr>
-				<td>
-					<H2>
-						<a 
-							href="../projects/project1.html">
-							<img 
-								src="../images/blitz.jpg" 
-								onmouseover="this.src='../images/blitz_text.jpg'" 
-								onmouseout="this.src='../images/blitz.jpg'" 
-							/>
-						</a>
-					</H2>
-				</td>																			
-				<td>
-					<H2>
-						<a 
-							href="../projects/project1.html">
-							<img 
-								src="../images/bombir.jpg" 
-								onmouseover="this.src='../images/bombir_text.jpg'" 
-								onmouseout="this.src='../images/bombir.jpg'" 
-							/>
-						</a>
-					</H2>
-				</td>	
-				<td>
-					<H2>
-						<a 
-							href="../projects/project1.html">
-							<img 
-								src="../images/cinecitta.jpg" 
-								onmouseover="this.src='../images/cinecitta_text.jpg'" 
-								onmouseout="this.src='../images/cinecitta.jpg'" 
-							/>
-						</a>
-					</H2>
-				</td>																			
-			</tr>
-			
-			<tr>
-				<td>
-					<H2>
-						<a 
-							href="../projects/project1.html">
-							<img 
-								src="../images/gestural.jpg" 
-								onmouseover="this.src='../images/gestural_text.jpg'" 
-								onmouseout="this.src='../images/gestural.jpg'" 
-							/>
-						</a>
-					</H2>
-				</td>																			
-				<td>
-					<H2>
-						<a 
-							href="../projects/project1.html">
-							<img 
-								src="../images/goal.jpg" 
-								onmouseover="this.src='../images/goal_text.jpg'" 
-								onmouseout="this.src='../images/goal.jpg'" 
-							/>
-						</a>
-					</H2>
-				</td>	
-				<td>
-					<H2>
-						<a 
-							href="../projects/project1.html">
-							<img 
-								src="../images/grlc.jpg" 
-								onmouseover="this.src='../images/grlc_text.jpg'" 
-								onmouseout="this.src='../images/grlc.jpg'" 
-							/>
-						</a>
-					</H2>
-				</td>																			
-			</tr>
-
+		<div class="all">
+			<div>
+				<H2>
+					21 Umbrellas
+				</H2>
+			</div>
+			<div>
+				<H2>
+					Abstract Machines
+				</H2>
+			</div>
+		</div>
 		
-		</TABLE>
+		<div class="commercial">
+			<div>
+				<H2>
+					21 Umbrellas
+				</H2>
+			</div>
+		</div>
+		
+		<div class="conceptual">
+			<div>
+				<H2>
+					Abstract Machines
+				</H2>
+			</div>
+		</div>
+		
+		
+		<!-- JAVASCRIPT -->
+		<script type="text/javascript">
+				function showHideDiv(id) {
+				  var obj = document.getElementById(id);
+					console.log(id);
+					console.log(obj);
+					if(obj != null) {
+						if (obj.style.display == "none"){
+							console.log("none");
+							obj.style.display = "block";
+						} 
+						else if(obj.style.display == "block") {
+							console.log("block");
+							obj.style.display = "none";
+						}
+					} else {
+						console.log("DOM not ready");
+					}
+				}
+		</script>
 		
 	</body>
 

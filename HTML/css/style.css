@@ -9,6 +9,41 @@
 		line-height: 1.0; 
 	}
 	
+	/* BUTTONS */
+	Button {
+	     appearance:button;
+     	-moz-appearance:button; /* Firefox */
+     	-webkit-appearance:button; /* Safari and Chrome */
+      	cursor:pointer;
+      	border:none;
+     	-moz-user-select: none; 
+        -khtml-user-select: none; 
+        -webkit-user-select: none; 
+        -o-user-select: none; 
+        
+		font: 20px helvetica, sans-serif; 
+		text-align:left;  
+		padding-left: 50px; 
+		letter-spacing: 0px; 
+		color: #A8B1B8;
+	}
+	
+	/* MENU DIVS */
+	
+	.all div {
+  		display: none;
+	}
+	
+	.commercial div {
+  		display: none;
+	}
+	
+	.conceptual div {
+  		display: none;
+	}
+
+	
+	
 	/* TEXT */
 	H1 {
 		font: 60px helvetica, sans-serif; 
