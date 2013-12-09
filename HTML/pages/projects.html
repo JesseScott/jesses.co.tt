@@ -17,8 +17,9 @@
 		<link rel="stylesheet" href="../css/style.css">
 		
 		<!-- JQUERY -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
+		
 		
 	</head>
 	
@@ -33,6 +34,13 @@
 			<a href="contact.html">contact</a>
 		</H1>
 		
+		
+		<Button>
+			<a href="#" onclick="showHideDiv('all')">ALL | </a>
+			<a href="#" onclick="showHideDiv('commercial')">COMMERCIAL</a>
+			<a href="#" onclick="showHideDiv('conceptual')">CONCEPTUAL | </a>
+		</Button>
+		
 		<form id='group'>
 			<label><input type="radio" name="group1" class="all"/></label>
 			<label><input type="radio" name="group1" class="commercial"/></label> 
@@ -40,73 +48,60 @@
 		</form>
 		
 		<div class="categories">
-		  <div class="all">all</div>
-		  <div class="commercial">commercial</div>
-		  <div class="conceptual">conceptual</div>
-		</div>
-		
-		<Button>
-			<a href="#" onclick="showHideDiv('all')">ALL | </a>
-			<a href="#" onclick="showHideDiv('commercial')">COMMERCIAL</a>
-			<a href="#" onclick="showHideDiv('conceptual')">CONCEPTUAL | </a>
-			<a href="../categories/curation.html">CURATION</a> | 
-			<a href="../categories/grl.html">GRL</a> | 
-			<a href="../categories/memelab.html">MEMELAB</a> |
-			<a href="../categories/mobile.html">MOBILE</a> |
-			<a href="../categories/software.html">SOFTWARE</a> | 
-			<a href="../categories/teaching.html">TEACHING</a> | 
-			<a href="../categories/writing.html">WRITING</a>
-		</Button>
-	
-		<div class="all">
-			<div>
-				<H2>
-					21 Umbrellas
+			<div class="all">
+		  		<H2>
+					ALL
 				</H2>
 			</div>
-			<div>
-				<H2>
-					Abstract Machines
+			<div class="commercial">
+		  		<H2>
+					COMM
+				</H2>
+			</div>
+			<div class="conceptual">
+		  		<H2>
+					CONC
 				</H2>
 			</div>
 		</div>
-		
-		<div class="commercial">
-			<div>
-				<H2>
-					21 Umbrellas
-				</H2>
-			</div>
-		</div>
-		
-		<div class="conceptual">
-			<div>
-				<H2>
-					Abstract Machines
-				</H2>
-			</div>
-		</div>
-		
 		
 		<!-- JAVASCRIPT -->
 		<script type="text/javascript">
+			$(document).ready(function() {	
+			
 				function showHideDiv(id) {
-				  var obj = document.getElementById(id);
+					var obj = document.getElementById(id);
 					console.log(id);
 					console.log(obj);
 					if(obj != null) {
-						if (obj.style.display == "none"){
+						if (obj.style.display == "none") {
 							console.log("none");
 							obj.style.display = "block";
 						} 
 						else if(obj.style.display == "block") {
 							console.log("block");
-							obj.style.display = "none";
-						}
-					} else {
+							obj.style.display = "none";+	
+						} 
+					} 
+					else {
 						console.log("DOM not ready");
 					}
 				}
+			
+				$('form#group').click(function(){
+					$('#group input').each(function() {
+						var item = $(this);
+						var isChecked = item.is(':checked');
+						var name = item.attr('class').replace("-btn", "-desktop");
+						if (isChecked) {
+							$('.' + name).show();
+						} else {
+							//$('.' + name).hide();
+						}
+					});
+				});
+				
+			});
 		</script>
 		
 	</body>
