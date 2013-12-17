@@ -36,9 +36,31 @@
 			Trade Route Simulator
 		</H2>
 		
-		<H3>
-			<p>Info Coming Soon</p>
-		</H3>
+		<H4>
+			<p>
+				For the Port of Prince Rupert Interpretive Centre, I was subcontracted by 
+				<a href="http://waddellandconder.wordpress.com/#!">Waddell and Conder</a> 
+				and <a href="http://www.eoslightmedia.com/">Eos Lightmedia</a>  
+				<br>
+				to produce a motion detection application that would determine when audience held their hands over virtual buttons on a map, 
+				<br>
+				and trigger specific video clips related to each button.
+				<br>
+				<br>
+				For the installation, I used a Microsoft Kinect to do blob detection in a specific height range, 
+				<br> 
+				with a couple of custom dynamic image rendering techniques to crop the visible area in a polygon.
+				<br>
+				From there, I set a series of timeout counters to test for false positives, and then trigger a UDP server
+				<br>
+				that messaged the video player application to play the appropriate content.
+				<br>
+				<br>
+				The control software was programmed entirely in <a href="http://processing.org/">Processing</a> 
+				and used  the <a href="http://www.v3ga.net/processing/BlobDetection/">Blob Detection</a> 
+				and <a href="https://code.google.com/p/simple-openni/">Simple OpenNI</a> libraries.
+			</p>
+		</H4>
 
 		
 	</body>
