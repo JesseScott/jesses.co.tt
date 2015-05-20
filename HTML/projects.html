@@ -2,50 +2,35 @@
 
 	<!-- HEAD -->
 	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<title>projects of jesses.co.tt</title>
-		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-	    <meta name="Keywords" content="Jesse Scott, jesses.co.tt, 
-		new media, new media artist, artist, digital artist, creative coder, 
-		Processing, openFrameworks, Cinder, Touch Designer, Pure Data, Pd, 
-		theory, creative, ideas">
-	    <meta name="Description" content="The Website of Jesse Scott">
-	    <meta name="author" content="Jesse Scott">
-  	    <meta name="distribution" content="Global">
-
-		<!-- STYLE -->
-		<link rel="stylesheet" href="_css/stylez.css">	
-		
-		<!-- JQUERY -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>$(function(){ $("head").load("header.html") });</script>
 	</head>
-	
+
 	<!-- BODY -->
 	<body>
 
 		<H3>
 			<a href="index.html" style=color:#A8B1B8;>jesses.co.tt</a>
-			<a href="about.html">about</a> 
+			<a href="about.html">about</a>
 			<a href="http://blog.jesses.co.tt/">blog</a>
 			<a href="projects.html">projects</a>
 			<a href="contact.html">contact</a>
 		</H3>
-		
-		
+
+
 		<Menu id="nav">
-			<a id="all">ALL</a> | 
-			<a id="commercial">COMMERCIAL</a> | 
-			<a id="conceptual">CONCEPTUAL</a> | 
-			<a id="curation">CURATION</a> | 
-			<a id="grl">GRL</a> | 
+			<a id="all">ALL</a> |
+			<a id="commercial">COMMERCIAL</a> |
+			<a id="conceptual">CONCEPTUAL</a> |
+			<a id="curation">CURATION</a> |
+			<a id="grl">GRL</a> |
 			<a id="memelab">MEMELAB</a> |
 			<a id="mobile">MOBILE</a> |
-			<a id="software">SOFTWARE</a> | 
-			<a id="teaching"">TEACHING</a> | 
+			<a id="software">SOFTWARE</a> |
+			<a id="teaching"">TEACHING</a> |
 			<a id="writing">WRITING</a>
 		</Menu>
-		
+
 
 		<div class="Menu all">
 			<H1><a href="_projects/21Umbrellas.html">21 Umbrellas</a></H1>
@@ -129,22 +114,22 @@
 		<div class="Menu writing">
 
 		</div>
-		
-		
+
+
 		<!-- JAVASCRIPT -->
 		<script type="text/javascript">
-			$(document).ready(function() {	
+			$(document).ready(function() {
 				// Show All On Start
 				$('.Menu').hide();
 				$('.all').show();
-			
+
 				$('#nav a').click(function(){
 					$('.Menu').hide();
 					$('.'+this.id).fadeIn(600);
 				});
 			});
 		</script>
-		
+
 	</body>
 
 </html>
