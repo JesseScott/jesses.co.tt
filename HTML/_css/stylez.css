@@ -23,6 +23,19 @@
   		display: none;
 	}
 
+	#navlist ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	#navlist li {
+		display: inline-block;
+		display: inline;
+		list-style-type: none;
+		padding-right: 20px;
+	}
+
 
 
 	/* TEXT */
