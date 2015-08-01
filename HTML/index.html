@@ -3,8 +3,10 @@
 	<!-- HEAD -->
 	<head>
 		<!-- META -->
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+		<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 		<meta name="Keywords" content="Jesse Scott, jesses.co.tt,
 		new media, new media artist, artist, digital artist, creative coder,
 		Processing, openFrameworks, Cinder, Touch Designer, Pure Data, Pd,
@@ -18,26 +20,37 @@
 
 		<!-- STYLE -->
 		<link rel="stylesheet" href="_css/stylez.css">
+		<link rel="stylesheet" href="_css/bootstrap.min.css">
 
-		<!-- JQUERY -->
+		<!-- JS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="_js/bootstrap.min.js"></script>
 	</head>
 
 	<!-- BODY -->
 	<body>
 
-		<header></header>
-
-		<nav id="navlist">
-			<H3>
-			<ul>
-				<li><a href="index.html" style=color:#A8B1B8;>jesses.co.tt</a></li>
-				<li><a href="about.html">about</a></li>
-				<li><a href="http://blog.jesses.co.tt/">blog</a></li>
-				<li><a href="projects.html">projects</a></li>
-				<li><a href="contact.html">contact</a></li>
-			</ul>
-			</H3>
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-default navbar-fixed-top" id="navlist">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html" style=color:#A8B1B8;>jesses.co.tt</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="about.html">about</a></li>
+						<li><a href="#blog">blog</a></li>
+						<li><a href="projects.html">projects</a></li>
+						<li><a href="contact.html">contact</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
 		</nav>
 
 		<H1>
