@@ -1,46 +1,83 @@
 <!DOCTYPE html>
 
-	<!-- HEAD -->
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<title>projects of jesses.co.tt</title>
-		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-	    <meta name="Keywords" content="Jesse Scott, jesses.co.tt, 
-		new media, new media artist, artist, digital artist, creative coder, 
-		Processing, openFrameworks, Cinder, Touch Designer, Pure Data, Pd, 
-		theory, creative, ideas">
-	    <meta name="Description" content="The Website of Jesse Scott">
-	    <meta name="author" content="Jesse Scott">
-  	    <meta name="distribution" content="Global">
+<!-- HEAD -->
+<head>
+	<!-- META -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  	    <!-- BASE -->
-  	    <base href="http://www.jesses.co.tt/" />
+	<meta name="Keywords" content="Jesse Scott, jesses.co.tt,
+	new media, new media artist, artist, digital artist, creative coder,
+	Processing, openFrameworks, Cinder, Touch Designer, Pure Data, Pd,
+	theory, creative, ideas">
+	<meta name="Description" content="The Website of Jesse Scott">
+	<meta name="author" content="Jesse Scott">
+	<meta name="distribution" content="Global">
 
-		<!-- STYLE -->
-		<link rel="stylesheet" href="../_css/stylez.css">		
-		
-	</head>
-	
+	<!-- TITLE -->
+	<title>jesses.co.tt</title>
+
+	<!-- STYLE -->
+	<link rel="stylesheet" href="../_css/stylez.css">
+	<link rel="stylesheet" href="../_css/bootstrap.min.css">
+
+	<!-- JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="../_js/bootstrap.min.js"></script>
+</head>
+
 	<!-- BODY -->
 	<body>
 
-		<H3>
-			<a href="index.html" style=color:#A8B1B8;>jesses.co.tt</a>
-			<a href="../about.html">about</a> 
-			<a href="http://blog.jesses.co.tt/">blog</a>
-			<a href="../projects.html">projects</a>
-			<a href="../contact.html">contact</a>
-		</H3>
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-default navbar-fixed-top" id="navlist">
+			<div class="container">
+				<div id="navbar" class="navbar-collapse collapse">
+					<ol class="breadcrumb">
+					  <li><a href="../projects.html">Projects</a></li>
+					  <li class="active">Original GCode</li>
+					</ol>
+				</div>
+			</div>
+		</nav>
 
-	
+		<!-- CONTAINER -->
+		<div style="color: #A8B1B8;" class="container">
 		<H1>
 			Original GCode
 		</H1>
-		
-		<H2>
-			<p>Info Coming Soon</p>
-		</H2>
-		
+
+		<br>
+		<br>
+
+		<H4>
+			<p>
+				OriginalGCode is a hardware/software package designed to allow graffiti tags and drawings to be easily captured via a webcam,
+				and export the ensuing shape data to various formats for 2D and 3D fabrication.
+				Built as part of Graffiti Research Lab Germany, in extension to the SVG2BVG project.
+				For more information and source code, visit graffitiresearchlab.de/​original-gcode.
+
+				CONSTRUCTION
+				We built a 60x42x42 cm wooden box with a camera frame in the bottom, and a 59×41 cm sheet of 0.5 cm plexiglass,
+				along with semi-opaque gauze, then a sheet of acetate, and a black dry erase marker.
+				Construction was done at our favourite maker lab, Open Design City.
+				Full Instructables coming soon.
+
+				SOFTWARE
+				OriginalGCode was built entirely in Processing, and makes use of
+					the Blob Detection library by V3GA,
+					the GML4U library byJérôme Saint-Clair,
+					the ControlP5 library by Andreas Schlegel,
+					and the Super Fast Blur algorithm by Mario Klingemann,
+					and was helped tremendously by Cedric Keifer from Onformative,
+					and all the good folk on the Processing Forum.
+
+			</p>
+		</H4>
+
+</div> <!-- end container -->
+
 	</body>
 
 </html>
