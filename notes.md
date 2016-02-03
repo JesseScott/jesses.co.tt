@@ -13,7 +13,19 @@ audio tag
 curation tag
 writing tag
 
+## proj
+
+2Story - add store links
+G8 - add store links
+bomb - add supporters / res
+
+## cv
+
+look for missing projects
+
 ## media
+
+BT - add more ?
 
 ViewBook - make video
 Noded - make video
