@@ -15,7 +15,6 @@ writing tag
 
 ## proj
 
-G8 - add store links
 bomb - add supporters / res
 
 ## cv
