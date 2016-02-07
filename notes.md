@@ -40,7 +40,7 @@ HS - generate images / ask
 21 - try for better
 TRS - try for better
 
-ROCK - embed
+<!-- ROCK - embed -->
 TAB - make ? get ?
 
 ## source

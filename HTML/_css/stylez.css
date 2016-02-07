@@ -30,6 +30,24 @@
 		padding-right: 20px;
 	}
 
+	/* MEDIA */
+
+	.media {
+		width: 90%;
+		margin: auto;
+		position: relative;
+	}
+
+	.media img {
+		width: 100%;
+		height: auto;
+		margin-bottom: 10px;
+	}
+
+	.media video {
+		width: 100%;
+		height: auto;
+	}
 
 	/* TEXT */
 
