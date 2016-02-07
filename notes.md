@@ -15,7 +15,6 @@ writing tag
 
 ## proj
 
-2Story - add store links
 G8 - add store links
 bomb - add supporters / res
 
