@@ -1,6 +1,8 @@
 
 ## add ?
 
+<!-- decanter -->
+circles
 micro climes
 without effect
 silent headphones
@@ -25,23 +27,20 @@ look for missing projects
 
 ## media
 
-BT - add more ?
-
+BT - add more ? (HM)
 <!-- ViewBook - make video -->
 Noded - make video
 Moonlight - make video
 PF - make video
 MI - make video
-
 TSVP - make image/video
 gestural - look for images / video
-HS - generate images / ask
-
-21 - try for better
+<!-- HS - generate images / ask -->
+<!-- 21 - try for better -->
 TRS - try for better
-
 <!-- ROCK - embed -->
 TAB - make ? get ?
+<!-- DEC - assemble -->
 
 ## source
 
