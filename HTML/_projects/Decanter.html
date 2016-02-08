@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<!-- HEAD -->
+<head>
+	<!-- META -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="Keywords" content="Jesse Scott, jesses.co.tt,
+	new media, new media artist, artist, digital artist, creative coder,
+	Processing, openFrameworks, Cinder, Touch Designer, Pure Data, Pd,
+	theory, creative, ideas">
+	<meta name="Description" content="The Website of Jesse Scott">
+	<meta name="author" content="Jesse Scott">
+	<meta name="distribution" content="Global">
+
+	<!-- TITLE -->
+	<title>jesses.co.tt</title>
+
+	<!-- STYLE -->
+	<link rel="stylesheet" href="../_css/stylez.css">
+	<link rel="stylesheet" href="../_css/bootstrap.min.css">
+
+	<!-- JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="../_js/bootstrap.min.js"></script>
+</head>
+
+	<!-- BODY -->
+	<body>
+
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-default navbar-fixed-top" id="navlist">
+			<div class="container">
+				<div id="navbar" class="navbar-collapse collapse">
+					<ol class="breadcrumb">
+					  <li><a href="../projects.html">Projects</a></li>
+					  <li class="active">Decanter</li>
+					</ol>
+				</div>
+			</div>
+		</nav>
+
+		<!-- CONTAINER -->
+		<div style="color: #A8B1B8;" class="container">
+			<H1>
+				Decanter
+			</H1>
+			<br>
+			<br>
+			<p>
+				<strong>Decanter</strong> was a collaborative project with
+        <a href="http://www.leostefansson.com/" target="_blank">Leó Stefánsson</a>
+				for the video bar at
+				<a href="http://www.vivomediaarts.com/" target="_blank">VIVO Media Arts</a>.
+				<br><br>
+
+				The installation consisted of a camera tracking a beer tap, and when the beer would be 'decanted' into a glass,
+        a wave of noise would be generated based off the pouring and settling of the beer.
+        We wrote a custom
+				<a href="http://www.openframeworks.cc/" target="_blank">openFrameworks</a>
+        application to do various image recognition algorithms on the video feed,
+        including frame differencing and colour sorting.
+				The oF app would then parse the data and pass it along to another program, a custom
+				<a href="https://cycling74.com/" target="_blank">Max/MSP</a> app,
+				which would sonicize the data, as well as using Jitter to stitch together the
+        <a href="http://syphon.v002.info/" target="_blank">Syphon</a>
+        feed and combine it with some custom visual renderings of the ensuing FFT analysis.
+				<br><br>
+				The source code can be found on my
+        <a href="https://github.com/JesseScott/Decanter" target="_blank">GitHub</a>.
+			</p>
+			<br><br>
+			<div class="media">
+				<img src="../_img/dec_1.jpg" alt="" />
+        <img src="../_img/dec_2.jpg" alt="" />
+        <img src="../_img/dec_3.jpg" alt="" />
+        <img src="../_img/dec_4.jpg" alt="" />
+			</div>
+		</div> <!-- end container -->
+
+	</body>
+
+</html>
