@@ -34,7 +34,7 @@ Moonlight - make video
 PF - make video
 MI - make video
 TSVP - make image/video
-gestural - look for images / video
+<!-- gestural - look for images / video -->
 <!-- HS - generate images / ask -->
 <!-- 21 - try for better -->
 TRS - try for better
