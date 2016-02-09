@@ -28,6 +28,7 @@ look for missing projects
 ## media
 
 BT - add more ? (HM)
+SS - add video / make video
 <!-- ViewBook - make video -->
 Noded - make video
 Moonlight - make video
@@ -47,3 +48,8 @@ TAB - make ? get ?
 <!-- add cinecitta -->
 <!-- add cocities -->
 <!-- add royalty free  -->
+
+
+## optim
+
+TinyJPG !!!
