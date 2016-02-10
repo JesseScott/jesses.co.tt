@@ -40,7 +40,7 @@ TSVP - make image/video
 <!-- 21 - try for better -->
 TRS - try for better
 <!-- ROCK - embed -->
-TAB - make ? get ?
+<!-- TAB - make ? get ? -->
 <!-- DEC - assemble -->
 
 ## source
