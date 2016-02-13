@@ -32,6 +32,12 @@
 
 	/* MEDIA */
 
+	.portrait {
+		width: 50%;
+		margin: auto;
+		position: relative;
+	}
+
 	.media {
 		width: 100%;
 		margin: auto;
