@@ -1,4 +1,5 @@
 # DS SHIT
 .DS_Store
 
-.DS_Store
+# VS SHIT
+.vscode/*
