@@ -21,6 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     };
     show('all');
-    filter.querySelectorAll('a').forEach(a => a.addEventListener('click', () => show(a.id)));
+    filter.querySelectorAll('a').forEach(a => a.addEventListener('click', e => { e.preventDefault(); show(a.id); }));
   }
 });
