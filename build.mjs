@@ -14,6 +14,7 @@ import { join, relative, dirname, sep } from 'node:path';
 const SRC = 'src';
 const OUT = 'dist';
 const SITE = 'jesses.co.tt';
+const AUTHOR = 'Jesse Scott';
 const DEFAULT_DESCRIPTION = 'The Website of Jesse Scott';
 
 const partial = name => readFileSync(join(SRC, '_partials', name), 'utf8').replace(/\r\n/g, '\n').replace(/\n$/, '');
@@ -32,12 +33,13 @@ function parse(text) {
 
 function render(file, { meta, content }) {
   const isProject = relative(SRC, file).split(sep)[0] === '_projects';
+  if (!meta.description) console.warn(`warning: ${file} has no description`);
   const root = isProject ? '../' : '';
   const vars = {
     root,
     title: meta.title ?? '',
     description: meta.description ?? DEFAULT_DESCRIPTION,
-    pageTitle: meta.title ? `${meta.title} \u2013 ${SITE}` : SITE,
+    pageTitle: meta.title ? `${meta.title} \u2013 ${AUTHOR}` : `${SITE} \u2013 ${AUTHOR}`,
   };
   for (const n of ['about', 'projects', 'contact']) vars[`${n}Active`] = meta.nav === n ? ' class="active"' : '';
   const nav = fill(partial(isProject ? 'nav-project.html' : 'nav-page.html'), vars);
