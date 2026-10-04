@@ -1,0 +1,11 @@
+# Canonical address: https://www.jesses.co.tt
+RewriteEngine On
+
+# jesses.co.tt (http or https) -> https://www.jesses.co.tt, in one hop
+RewriteCond %{HTTP_HOST} ^jesses\.co\.tt$ [NC]
+RewriteRule ^ https://www.jesses.co.tt%{REQUEST_URI} [L,R=301]
+
+# http://www.jesses.co.tt -> https://www.jesses.co.tt
+RewriteCond %{HTTP_HOST} ^www\.jesses\.co\.tt$ [NC]
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://www.jesses.co.tt%{REQUEST_URI} [L,R=301]
