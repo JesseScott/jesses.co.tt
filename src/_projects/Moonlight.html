@@ -1,6 +1,6 @@
 ---
 title: Moonlight
-description: An iOS and Android app, made to learn AngularJS and PhoneGap, that casts a glow across the screen based on the current phase of the moon.
+description: An Android and Wear OS app that colours your screen with the light of the moon, using real moon data for where you are right now.
 ---
 	<!-- CONTAINER -->
 	<div style="color: #5F6B74;" class="container">
@@ -10,22 +10,48 @@ description: An iOS and Android app, made to learn AngularJS and PhoneGap, that 
 		<br>
 		<br>
 		<p>
-			<strong>Moonlight</strong> is an iOS & Android application that I made as an experiment to learn AngularJS and PhoneGap.
-			Based off of an original idea by an acquaintance Kelly Andres - who was a co-resident during the MARIN Residency where I made
-			<a href="SonicDrift.html" target="_blank">Sonic Drift </a>,
-			the implementation is very simple - cast a glow across the screen based off of the current phase of the moon.
+			<strong>Moonlight</strong> is an Android and Wear OS app that lights your screen with the moon.
+			It works out where the moon is in your sky right now (its phase, how high it sits above the horizon, how much of it is lit)
+			and turns that into a slow wash of colour: cool blue at the new moon, warming to gold at the full moon,
+			deeper and more muted when the moon is below the horizon.
 			<br><br>
-			So that's what the code does - queries the lunar cycle, thanks to the SunCalc library - then uses a HTML5 Canvas to light up the screen.
-			<br>
-			And that's it.
-			<br><br>
-			The application has not been released publically, as it was intended as a teaching tool,
-			but the source code can be found on my
-			<a href="https://github.com/JesseScott/moonlight" target="_blank">GitHub</a>.
+			The idea began with the artist <a href="https://kellyandres.xyz" target="_blank">Kelly Andres</a>, a co-resident during the MARIN Residency where I made
+			<a href="SonicDrift.html" target="_blank">Sonic Drift</a>.
+			The moon calculations come from the open source <a href="https://github.com/shred/commons-suncalc" target="_blank">SunCalc</a> library.
 		</p>
-		<br><br>
+		<br>
+		<H3>How it works</H3>
+		<p>
+			The app asks for your approximate location, which is all it needs to know where the moon is from where you stand.
+			Phase sets the hue, altitude sets how rich the colour is, and the illuminated fraction sets how bright and how opaque it is.
+			A Data screen shows the numbers behind the colour: altitude, distance, and how much of the moon is lit.
+			The same mapping drives both the phone app and the watch app, and the app is available in English and Spanish.
+		</p>
+		<br>
+		<H3>Where it is now</H3>
+		<p>
+			Version 0.6 is the current release, a native Android app written in Kotlin with a Wear OS companion.
+			A home screen widget and a live wallpaper are being built next.
+			The Google Play release is still pending; until then you can follow along, read the code or report a bug on
+			<a href="https://github.com/JesseScott/moonlight" target="_blank">GitHub</a>.
+			Moonlight is open source under the Apache 2.0 license.
+		</p>
+		<br>
+		<H3>Where it came from</H3>
+		<p>
+			Moonlight started in 2015 as an experiment: an iOS and Android prototype built with AngularJS and PhoneGap, to learn those tools.
+			It drew the glow on an HTML5 canvas and was never released.
+			You can see that first version in the video below.
+			The current app is a ground-up rewrite in native Android, and it no longer targets iOS.
+		</p>
+		<br>
 		<div>
 			<iframe src="https://player.vimeo.com/video/155186901" width="500" height="889" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-			<p><a href="https://vimeo.com/155186901">moonlight</a> from <a href="https://vimeo.com/jessecolinscott">Jesse Scott</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+			<p><a href="https://vimeo.com/155186901">moonlight</a> (the 2015 prototype) from <a href="https://vimeo.com/jessecolinscott">Jesse Scott</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 		</div>
+		<br>
+		<p>
+			Questions or problems? Email me at 'js' at this domain. If you'd like to support the project, you can
+			<a href="https://ko-fi.com/jessescott" target="_blank">buy me a coffee</a>.
+		</p>
   </div> <!-- end container -->
