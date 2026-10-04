@@ -1,0 +1,31 @@
+---
+title: Git 3D
+description: A local 3D visualizer for Git repositories: walk through commit history, explore branches in space, and inspect each commit.
+---
+	<!-- CONTAINER -->
+	<div style="color: #5F6B74;" class="container">
+		<H1>
+			Git 3D
+		</H1>
+		<br>
+		<br>
+		<p>
+			<strong>Git 3D</strong> (GitGraph 3D) is a visualizer that turns the history of a Git repository into a place you can walk through.
+			Time runs along one axis, branches fan out into lanes either side, and each commit is a node you can click to see its details.
+			<br><br>
+			You point it at a repository on your own machine and it reads the history locally.
+			Walk forwards and back along the commits with the arrow keys or WASD, hop between branch lanes,
+			or switch to a free orbit camera to look at the whole thing from outside.
+			Repositories you have imported are remembered, so you can come back to them and re-import to pick up new commits.
+			<br><br>
+			It is built with React Three Fiber on the front end and a small Express server that runs Git and hands the history over as JSON.
+			It runs entirely on your own computer, and the source (MIT licensed) is on
+			<a href="https://github.com/JesseScott/git-graph" target="_blank">GitHub</a>.
+		</p>
+		<br><br>
+		<div class="media">
+			<video width="100%" height="auto" controls muted loop playsinline preload="metadata" poster="../_img/git3d_poster.png">
+				<source src="../_mov/git3d_1.mp4" type="video/mp4">
+			</video>
+		</div>
+  </div> <!-- end container -->
