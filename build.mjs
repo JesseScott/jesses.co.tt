@@ -15,7 +15,9 @@ const SRC = 'src';
 const OUT = 'dist';
 const SITE = 'jesses.co.tt';
 const AUTHOR = 'Jesse Scott';
+const ORIGIN = 'https://www.jesses.co.tt';
 const DEFAULT_DESCRIPTION = 'The Website of Jesse Scott';
+const pages = []; // URL paths of rendered pages, for the sitemap
 
 const partial = name => readFileSync(join(SRC, '_partials', name), 'utf8').replace(/\r\n/g, '\n').replace(/\n$/, '');
 const fill = (tpl, vars) => tpl.replace(/\{\{(\w+)\}\}/g, (_, k) => vars[k] ?? '');
@@ -35,8 +37,13 @@ function render(file, { meta, content }) {
   const isProject = relative(SRC, file).split(sep)[0] === '_projects';
   if (!meta.description) console.warn(`warning: ${file} has no description`);
   const root = isProject ? '../' : '';
+  const urlPath = '/' + relative(SRC, file).split(sep).join('/');
+  const url = urlPath === '/index.html' ? '/' : urlPath;
+  pages.push(url);
   const vars = {
     root,
+    origin: ORIGIN,
+    canonical: ORIGIN + url,
     title: meta.title ?? '',
     description: meta.description ?? DEFAULT_DESCRIPTION,
     pageTitle: meta.title ? `${meta.title} \u2013 ${AUTHOR}` : `${SITE} \u2013 ${AUTHOR}`,
@@ -80,4 +87,13 @@ function walk(dir) {
 
 rmSync(OUT, { recursive: true, force: true });
 walk(SRC);
+
+const sitemap = [
+  '<?xml version="1.0" encoding="UTF-8"?>',
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+  ...pages.sort().map(url => `  <url><loc>${ORIGIN}${url}</loc></url>`),
+  '</urlset>',
+  '',
+].join('\n');
+writeFileSync(join(OUT, 'sitemap.xml'), sitemap);
 console.log(`Built ${SITE} -> ${OUT}/`);
