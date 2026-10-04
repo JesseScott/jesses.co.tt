@@ -3,3 +3,7 @@
 
 # VS SHIT
 .vscode/*
+
+# build output
+dist/
+scratch-*.json

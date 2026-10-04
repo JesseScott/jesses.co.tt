@@ -1,0 +1,38 @@
+---
+title: Trade Route Simulator
+description: A motion-detection interactive map for the Port of Prince Rupert Interpretive Centre that triggers video clips as visitors hover over virtual buttons.
+---
+		<!-- CONTAINER -->
+		<div style="color: #5F6B74;" class="container">
+			<H1>
+				Trade Route Simulator
+			</H1>
+			<br>
+			<br>
+			<p>
+				<strong>Trade Route Simulator</strong> was made for the Port of Prince Rupert Interpretive Centre.
+				I was subcontracted by
+				<a href="https://waddellandconder.wordpress.com/#!" target="_blank">Waddell and Conder</a>
+				and
+				<a href="https://www.eoslightmedia.com/" target="_blank">Eos Lightmedia</a>
+				to produce a motion detection application that would determine when audience held their hands over virtual buttons on a map,
+				and trigger specific video clips related to each button.
+				<br><br>
+				For the installation, I used a Microsoft Kinect to do blob detection in a specific height range,
+				with a couple of custom dynamic image rendering techniques to crop the visible area in a polygon.
+				From there, I set a series of timeout counters to test for false positives, and then trigger a UDP server
+				that messaged the video player application to play the appropriate content.
+				The control software was programmed entirely in
+				<a href="https://processing.org/" target="_blank">Processing</a>
+				and used  the
+				<a href="https://www.v3ga.net/processing/BlobDetection/" target="_blank">Blob Detection</a>
+				and
+				<a href="https://web.archive.org/web/https://code.google.com/p/simple-openni/" target="_blank">Simple OpenNI</a>
+				libraries.
+			</p>
+			<br><br>
+			<div class="media">
+				<img src="../_img/trs_1.jpg" alt="" />
+				<img src="../_img/trs_2.jpg" alt="" />
+			</div>
+		</div> <!-- end container -->
