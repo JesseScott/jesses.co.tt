@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moonlight: Privacy Policy</title>
+<meta name="description" content="Privacy policy for Moonlight, an Android and Wear OS app that glows with the moon.">
+<style>
+  :root { color-scheme: light dark; --bg: #fbfcff; --text: #1a1b21; --muted: #434653; --line: #c2c6d5; --link: #4c54b4; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1a1b21; --text: #e0e2eb; --muted: #c2c6d5; --line: #434653; --link: #b8c4ff; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 2rem 1rem 4rem; }
+  h1 { font-size: 2rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.3rem; margin: 2.2rem 0 .5rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+  p, li { margin: .5rem 0; }
+  .meta { color: var(--muted); margin-top: 0; }
+  a { color: var(--link); }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: .5rem .6rem; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Moonlight: Privacy Policy</h1>
+<p class="meta">Last updated: October 5, 2026</p>
+
+<p>Moonlight is a free Android and Wear OS app by Jesse Scott (British Columbia, Canada). It fills your screen with a glow that follows the moon: the colour comes from the moon's phase and from how high it is in your sky. It can also run as a live wallpaper and as a home screen widget. It is a hobby project: it has no accounts, no ads, and no servers of its own. This page explains what the app does with information, so you can decide whether you are comfortable with it.</p>
+<p>This page describes Moonlight 0.7 and later. In earlier versions (up to 0.6.0), crash reports were sent whether or not you had agreed to share usage data. Updating the app gives you the behaviour described here.</p>
+
+<h2>The short version</h2>
+<ul>
+  <li>Moonlight asks for <strong>approximate (coarse) location</strong> only, to work out where the moon is in your sky. That calculation happens on your phone. The app does not save your location and does not send it to me or to anyone else; I run no server that could receive it.</li>
+  <li>The app has <strong>no accounts, no ads, and no advertising ID</strong>, and it does not sell or share your data.</li>
+  <li><strong>Usage and crash reports are off</strong> until you turn them on, and you can turn them off again at any time. They are anonymous.</li>
+  <li>Moonlight works without location: it then shows the moon's phase and assumes the moon is part way up the sky.</li>
+</ul>
+
+<h2>What the app uses, and why</h2>
+<table>
+  <tr><th>Information</th><th>Used for</th><th>Where it goes</th></tr>
+  <tr>
+    <td>Your approximate location (only if you allow it)</td>
+    <td>Working out where the moon is in the sky (its height and direction), which sets the colour and the numbers on the data screen</td>
+    <td>Read from Android on your phone, used straight away, and not saved. It is not sent to me, to Google's analytics, or anywhere else. The live wallpaper and the widget do the same with the most recent location Android already has, if it allows it.</td>
+  </tr>
+  <tr>
+    <td>The date and time</td>
+    <td>Working out the moon's phase and position</td>
+    <td>Your phone's clock. Nothing is sent anywhere.</td>
+  </tr>
+  <tr>
+    <td>A few settings</td>
+    <td>Remembering that you have seen the hints and the location explanation, and your choice about usage and crash reports</td>
+    <td>Stored on your phone only. App backup is turned off, so this is not copied to other devices. The Wear OS app keeps no settings.</td>
+  </tr>
+</table>
+<p>The Wear OS app uses your approximate location the same way and does not use the internet. It has no usage or crash reporting.</p>
+
+<h2>Usage and crash reports (optional, off by default)</h2>
+<p>The first time you open Moonlight it asks whether you want to share usage data and crash reports. If you say yes (you can also switch this on or off in the app's About screen, under &ldquo;privacy&rdquo;), Moonlight uses <a href="https://firebase.google.com/support/privacy">Firebase</a>, a Google service, to see how the app is used and to find crashes. If you say no, nothing is collected. What is sent when you opt in:</p>
+<ul>
+  <li>which screens you open (the moon, data and about screens), and which buttons and links you tap in the About screen (the support link, feedback, open source licenses, the wallpaper and widget buttons), but not anything you type;</li>
+  <li>crash reports: what went wrong and where in the code it happened, plus basic details about the phone such as its model, Android version and language, and the app's version. The app does not add your location to these;</li>
+  <li>a random installation ID (a number that is not tied to you and changes if you reinstall).</li>
+</ul>
+<p>When it receives this, Google Analytics also works out a rough place (country, region or city) from your device's IP address. That comes from the network connection, not from the location the app uses for the moon. The advertising ID is not collected and ad personalization is turned off.</p>
+<p>If you turn the switch off again, reports stop, the app resets its random installation ID, and it discards reports it had not yet sent. Reports already sent stay with Firebase until its retention period ends (crash reports for 90 days, analytics event data for up to 14 months). Google processes this data under its own terms; see the Firebase link above.</p>
+
+<h2>Links that leave the app</h2>
+<p>Some buttons and links in the About screen open a website in your browser: the support link (Ko-fi), the feedback form, and the credits links (this site, GitHub and others). Those sites have their own privacy policies, and Moonlight has no control over them.</p>
+<p>The feedback form is a form hosted by <a href="https://www.notion.com/help/privacy">Notion</a>. What you write there, including the star rating, comes to me through Notion, and I read it to improve the app. Please don't put personal information in it that you don't want me to see.</p>
+
+<h2>Who else handles information</h2>
+<ul>
+  <li><a href="https://policies.google.com/privacy">Google</a>: your phone's location service, and, only if you opt in, Firebase.</li>
+  <li><a href="https://www.notion.com/help/privacy">Notion</a>: the feedback form, only if you use it.</li>
+  <li>Ko-fi: the support page, only if you open it. It has its own privacy policy.</li>
+</ul>
+
+<h2>Keeping and deleting information</h2>
+<p>I hold no personal information about you: there is no account or server. Information on your phone (your settings) is removed when you clear the app's storage or uninstall it. Turning off usage and crash reports stops further reports and resets the installation ID, so later reports can't be linked to earlier ones. Reports already sent are held by Firebase for its retention period; to ask about those, or anything else, contact me (below).</p>
+
+<h2>Your rights</h2>
+<p>Depending on where you live (for example under the GDPR in Europe, or PIPEDA and British Columbia's privacy law in Canada), you may have rights to access, correct or delete personal information, and to withdraw consent. Because Moonlight keeps no personal information on a server of its own, most of that is in your hands on your phone, and you can withdraw consent for reports at any time with the switch in the About screen. If you want to exercise a right, contact me.</p>
+
+<h2>Children</h2>
+<p>Moonlight is meant for people 18 and over and is not designed for children. I do not knowingly collect information from anyone under 13.</p>
+
+<h2>Security</h2>
+<p>The usage and crash reports you opt in to are sent over encrypted connections (HTTPS), and the app does not allow unencrypted connections. No method of transmission or storage is perfectly secure, but there is no database of user information for anyone to break into.</p>
+
+<h2>Changes to this policy</h2>
+<p>If the app starts doing something different with information, I will update this page and the &ldquo;Last updated&rdquo; date, and the app's About screen will say the same thing. The policy is also available from the app's Google Play listing.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy or the app: <a href="https://www.jesses.co.tt/contact.html">jesses.co.tt/contact.html</a>.</p>
+
+</main>
+</body>
+</html>
